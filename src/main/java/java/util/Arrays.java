@@ -3864,6 +3864,10 @@ public class Arrays {
         @Override
         public E set(int index, E element) {
             E oldValue = a[index];
+            /**
+             * xxx 再次测试提交是否正常
+             * @date 2020/1/11 16:23
+             */
             a[index] = element;
             return oldValue;
         }
