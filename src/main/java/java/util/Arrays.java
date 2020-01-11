@@ -3810,9 +3810,10 @@ public class Arrays {
     {
         private static final long serialVersionUID = -2764017481108945198L;
         /**
-         * a为final,所以创建的Arrays内部的ArrayList 为不可变的。
+         * todo a为final,所以创建的Arrays内部的ArrayList 为不可变的
          */
         private final E[] a;
+        //xxx 这是什么鬼东西
 
         ArrayList(E[] array) {
             a = Objects.requireNonNull(array);
