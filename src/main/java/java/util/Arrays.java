@@ -3846,6 +3846,11 @@ public class Arrays {
             * @date 2020/1/11 16:16
             */
             System.arraycopy(this.a, 0, a, 0, size);
+            /**
+             * todo 将源码单独添加到固定changelist
+             *  测试TODO列表是否可以显示多行，可以显示
+             * @date 2020/1/11 16:20
+             */
             if (a.length > size)
                 a[size] = null;
             return a;
