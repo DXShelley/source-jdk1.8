@@ -3797,7 +3797,8 @@ public class Arrays {
     @SafeVarargs
     @SuppressWarnings("varargs")
     public static <T> List<T> asList(T... a) {
-        // Arrays的asList方法返回的是内部类
+        //todo Arrays的asList方法返回的是内部类
+
         return new ArrayList<>(a);
     }
 
