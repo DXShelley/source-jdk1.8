@@ -3836,10 +3836,15 @@ public class Arrays {
         @Override
         @SuppressWarnings("unchecked")
         public <T> T[] toArray(T[] a) {
+            //fixme 修复我
             int size = size();
             if (a.length < size)
                 return Arrays.copyOf(this.a, size,
                                      (Class<? extends T[]>) a.getClass());
+           /**
+            * fixme 通过模版添加，修复我
+            * @date 2020/1/11 16:16
+            */
             System.arraycopy(this.a, 0, a, 0, size);
             if (a.length > size)
                 a[size] = null;
