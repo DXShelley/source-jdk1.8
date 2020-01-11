@@ -3875,6 +3875,11 @@ public class Arrays {
         @Override
         public int indexOf(Object o) {
             E[] a = this.a;
+            /**
+             * todo 测试默认生成时间戳，唯一标识本次注释
+             * @timestamp 1578737227667
+             * @date 2020/1/11 18:07
+             */
             if (o == null) {
                 for (int i = 0; i < a.length; i++)
                     if (a[i] == null)
