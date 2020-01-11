@@ -619,6 +619,13 @@ public abstract class FileChannel
     public abstract long transferTo(long position, long count,
                                     WritableByteChannel target)
         throws IOException;
+    /**
+     * todo transferTo 方法可实现零拷贝
+     *  正常拷贝：  磁盘  -> 内核空间  - > user空间 -> 内核空间 -> 目的缓冲区
+     * 	零拷贝方式  ：  磁盘  -> 内核空间  - >目的缓冲区
+     * @timestamp 1579568469117
+     * @date 2020/1/21 9:01
+     */
 
     /**
      * Transfers bytes into this channel's file from the given readable byte
