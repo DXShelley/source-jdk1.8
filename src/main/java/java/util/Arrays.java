@@ -3808,6 +3808,12 @@ public class Arrays {
     private static class ArrayList<E> extends AbstractList<E>
         implements RandomAccess, java.io.Serializable
     {
+        /**
+         * todo 由于没有实现add方法，所以调用add方法会报错
+         *  数组转List的正确方式：ArrayList<String> arrayList = new ArrayList<String>(Arrays.asList(arr));
+         * @timestamp 1578904899719
+         * @date 2020/1/13 16:41
+         */
         private static final long serialVersionUID = -2764017481108945198L;
         /**
          * todo a为final,所以创建的Arrays内部的ArrayList 为不可变的
