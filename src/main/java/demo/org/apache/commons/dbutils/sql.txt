@@ -1,0 +1,21 @@
+-- Create table
+create table Persion
+(
+  name     nvarchar2(64),
+  age      number,
+  sex      nvarchar2(10),
+  birthday date
+)
+;
+-- Add comments to the table
+comment on table Persion
+  is '人员表';
+-- Add comments to the columns
+comment on column Persion.name
+  is '用户名称';
+comment on column Persion.age
+  is '年龄';
+comment on column Persion.sex
+  is '性别';
+comment on column Persion.birthday
+  is '出生日期';
